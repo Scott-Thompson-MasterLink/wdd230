@@ -1,3 +1,12 @@
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
+p, li {
+    font-family: 'Lato', sans-serif;
+}
+
 body{
     font-size: 16pt;
     max-width: 750px;
@@ -13,16 +22,22 @@ header {
     background-color: #390099;
     color: white;
     padding: 1.5rem;
+    text-align: center;
+    align-items: center;
     
 }
 
 h1 {
     color: white;
-    text-align: center;
+
+}
+
+h2 {
+    margin-left: 20px;
+    font-size: 1.5rem;
 }
 
 header img{
-    float: right;
     width: 200px;
 }
 
