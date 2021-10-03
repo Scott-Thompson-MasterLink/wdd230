@@ -4,3 +4,119 @@
 --tangerine: #f18805ff;
 --marigold: #f0a202ff;
 --space-cadet: #202c59ff;*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+p, a{
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+body{
+    max-width: 1000px;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+header {
+    background-color: #202c59;
+    color: white;
+    padding: 15px;
+}
+
+header img{
+    max-width: 150px;
+}
+
+nav {
+	background-color: #202c59;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+ul {
+    list-style: outside none none;
+}
+
+nav ul li a {
+	display: block;
+	color: #fff;
+    background-color: #202c59;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+	background: linear-gradient(90deg, transparent, #d85531, transparent) top / var(--d, 0) 10px no-repeat;
+    transition: 0.5s;
+}
+nav a:hover {
+
+	--d: 75%;
+}
+.active {
+	color: #d85531;
+}
+
+
+img{
+    width: auto;
+    max-width: 90%;
+}
+
+main{
+    text-align: center;
+    max-width: 950px;
+}
+
+th{
+    padding: 20px;
+}
+
+.flame{
+    background-color: #d85531;
+    color: black;
+}
+
+.tangerine{
+    background-color: #f18805;
+    color: black;
+}
+
+.marigold{
+    background-color: #f0a202;
+    color: black;
+}
+
+.space-cadet{
+    background-color: #202c59;
+    color: white;
+}
+
+.colored_on_white{
+    color: #202c59; 
+}
+
+.colored_on_black{
+    background-color: black;
+    color: #f0a202;
+}
+
+.white_on_colored {
+    background-color: #202c59;
+    color: white;
+}
+
+.black_on_colored{
+    background-color: #f0a202;
+}
