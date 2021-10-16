@@ -1,0 +1,10 @@
+@media (min-width: 32.5em) {
+
+
+    header img{
+        float:left;
+    }
+    nav{
+        clear: left;
+    }
+}
