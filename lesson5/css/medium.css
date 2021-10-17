@@ -1,10 +1,49 @@
 @media (min-width: 32.5em) {
 
-
-    header img{
-        float:left;
-    }
+  
     nav{
         clear: left;
     }
+    .hero-box{
+
+        font-size: 1.2rem;
+    }
+
+    .forecast{
+        display: flex;
+
+        flex-flow: row wrap;
+        border: 1px solid #333;
+        margin-bottom:  10px;
+    }
+
+    .f_column{
+        flex: 1 1 auto;
+        border: 1px solid #333;
+        background-color: #202c592d;
+        
+    }
+
+    .f_day {
+        display: block;
+        padding: 5px;
+        border-bottom: 1px solid #333;
+        text-align: center;
+        background-color: #202C59;
+        color: white;
+    }
+
+    .f_column img{
+        width: 70%;
+
+    }
+
+    .f_temp{
+        display: block;
+    }
+    .contact-info img{
+        display: inline-block;
+    }
+
 }
+

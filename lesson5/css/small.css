@@ -5,7 +5,7 @@
 --marigold: #f0a202ff;
 --space-cadet: #202c59ff;*/
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6{
     font-family: 'Merriweather', serif;
     padding: 1.5rem;
     text-align: center;
@@ -24,6 +24,14 @@ body{
 
 }
 
+.pancake_banner{
+    background-color: #F0A202;
+    color: black;
+    padding: 10px;
+    margin: 10px auto;
+
+}
+
 header, footer {
     background-color: #202c59;
     color: white;
@@ -31,7 +39,10 @@ header, footer {
 }
 
 header img{
-    width: 75px;
+    width: 10%;
+    float:left;
+
+
 }
 
 .navigation li:first-child {
@@ -78,6 +89,7 @@ nav a:hover {
 }
 .active {
     color: white;
+    background: linear-gradient(90deg, transparent, #F0A202, transparent) top / var(--d, 0) 10px no-repeat;
     --d: 75%;
 }
 
@@ -96,3 +108,56 @@ main{
     max-width: 1000px;
     margin: 0 auto;
 }
+
+.hero-box{
+    margin: 10px auto; 
+    position: relative;
+    font-size: .7rem;
+}
+
+.hero-box img{
+    max-width: 100%;
+}
+
+.hero-box h2, .hero-box p {
+    margin: 0;
+    text-shadow:3px 3px 5px #777;
+
+}
+
+.weather-box{
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    background: #f0a102c9;
+    border: 1px solid #000;
+    padding: .7rem;
+    box-shadow: 0 0 30px #333;
+    opacity: .8;
+
+}
+
+.forecast{
+    display: none;
+}
+
+.article{
+    background: #f0a102c9;
+    padding: 15px 20px;
+
+
+}
+
+.contact-info{
+    background-color: #202c59f5;
+    color: white;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+
+.contact-info img{
+    display: none;
+}
+
+
+
