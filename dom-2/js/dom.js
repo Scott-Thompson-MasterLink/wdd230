@@ -2,6 +2,17 @@ const button = document.querySelector('div button');
 const chapList = document.querySelector('.list')
 const input = document.querySelector('#favchap');
 
+
+const emptyCheck = () =>{
+    if (input.value == null || input.value == ''){
+
+    }
+    else{
+        addToList();
+    };
+
+}
+
 const addToList = () =>{
     let myItem = input.value;
     input.value = '';
@@ -33,7 +44,9 @@ const addToList = () =>{
 
 
 }
-button.addEventListener('click', addToList);
+
+
+button.addEventListener('click', emptyCheck);
 
 
 
