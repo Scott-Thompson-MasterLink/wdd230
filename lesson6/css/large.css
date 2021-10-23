@@ -1,0 +1,30 @@
+@media (min-width: 64em) {
+    nav ul { 
+        display: flex; 
+    }
+
+    nav ul li { 
+        flex: 1 1 100%; 
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+    
+    .navigation li {
+        display: block;
+    } 
+
+    header img{
+        width: 10%;
+    }
+    .weather-box{
+        top: 60px;
+        left: 50px;
+        padding: 1.5rem;
+
+
+    }
+
+
+}
