@@ -12,7 +12,7 @@ img{
     filter: blur(.5em);
 }
 
-src{
+img src{
     filter: blur(0em);
-    transition: filter 1.5s;
+    transition: filter 1s;
 }
