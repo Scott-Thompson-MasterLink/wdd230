@@ -1,8 +1,17 @@
 const imagesToLoad = document.querySelectorAll('img[data-src]')
 
+
+function preLoad(img) {
+    const src = img.getAttribute("data-src");
+    if(!src) {
+        return; 
+    }
+    img.src = src; 
+}
+
 const options = {
     threshold: 0,
-    rootMargin: '0px 0px 100px 0px'
+    rootMargin: '0px 0px 300px 0px'
 }
 
 const loadImages = (image) => {
@@ -20,6 +29,7 @@ if ('IntersectionObserver' in window) {
         items.forEach((item) => {
             if (item.isIntersecting) {
                 loadImages(item.target);
+                preLoad(item.target);
                 observer.unobserve(item.target);
             }
         });
