@@ -41,6 +41,7 @@ header, footer {
 header img{
     width: 10%;
     float:left;
+    max-width: 150px;
 
 
 }
@@ -151,6 +152,35 @@ main{
 
 .clearfix {
     overflow: auto;
+}
+
+[data-src]{
+    filter: blur(.5em);
+}
+
+img src{
+    filter: blur(0em);
+    transition: filter 1s;
+}
+
+.gallery-grid div{
+    display: flex;
+    flex-flow: column;
+    max-width: 300px;
+    padding: 25px;
+    border: 2px solid gray;
+    margin: 10px auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(216, 85, 49, 0.836);
+    background-color: rgb(241, 240, 240);
+
+}
+.gallery-grid div img{
+    margin: 0 auto;
+}
+
+article img{
+    margin: 0 10px;
 }
 
 

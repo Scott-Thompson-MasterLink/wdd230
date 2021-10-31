@@ -67,6 +67,10 @@
         width: 50%;
         margin: 0 2%;
     }
+    .gallery-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
 }
 

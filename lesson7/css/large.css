@@ -25,6 +25,16 @@
 
 
     }
+    .gallery-grid{
+
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .gallery-grid div:hover{
+
+        box-shadow: 10px 10px 10px rgb(216, 85, 49);
+    
+    }
 
 
 }

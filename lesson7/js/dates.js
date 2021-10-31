@@ -13,3 +13,26 @@ if (today.getDay() == 5){
 else{
     pancake_banner.style.display = "none";
 };
+
+const milliToDays = 86400000;
+
+const lastVisit = document.querySelector('.last-visit');
+
+let lastDate = parseInt(localStorage.getItem("lastVisit")) || Date.now();
+
+
+
+
+const currentDate = Date.now();
+
+lastVisit.textContent = Math.round((currentDate - lastDate) / milliToDays);
+
+
+
+
+let storeDate = () =>{
+    
+    
+}
+const current = Date.now();
+localStorage.setItem("lastVisit", JSON.stringify(current));

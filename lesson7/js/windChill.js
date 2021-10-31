@@ -12,7 +12,7 @@ function calculateChill(temp, speed){
 };
 
 
-if (temperature <= 50 && windSpeed >= 4 ){
+if (temperature <= 50 && windSpeed >= 3 ){
     chill.textContent = calculateChill(temperature, windSpeed);
 
 }
