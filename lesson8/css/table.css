@@ -7,6 +7,7 @@ table{
     border: thin solid lightgray;
     border-collapse: collapse;
     text-align: center;
+	box-shadow: 15px 15px 15px gray;
 
 }
 thead th, #goalmet{
