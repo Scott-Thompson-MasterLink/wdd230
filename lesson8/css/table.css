@@ -1,0 +1,44 @@
+/* #e7f0ed, #e7ffed (data rows) and #628ca6, #7fb9c2 */
+
+
+
+table{
+    margin: 0 auto;
+    border: thin solid lightgray;
+    border-collapse: collapse;
+    text-align: center;
+
+}
+thead th, #goalmet{
+    background-color: #628ca6;
+    color: white;
+}
+thead:first-of-type tr:first-of-type th:first-of-type {
+    background-color: #7fb9c2;
+    color: black;
+    font-size: 1.7rem;
+}
+thead{
+    font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: #e7f0ed;
+}
+tbody tr:nth-child(even) {
+	background-color: #e7ffed;
+}
+tbody :nth-child(5) :nth-child(1){
+    font-style: italic;
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid lightgray;
+    font-family: 'Ubuntu', sans-serif;
+}
+tfoot{
+    background-color: #7fb9c2;
+    font-size: .6rem;
+    font-weight: bold;
+}
