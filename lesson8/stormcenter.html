@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>The Blaze Spot</title>
+</head>
+
+<body>
+    <header>
+        <div class="pancake_banner">
+            <p>Saturday = Preston Pancakes in the Park!</p>
+            <p>9:00 a.m. Saturday at the city park pavilion.</p>
+
+        </div>
+        <img src="images/rsz_2blaze_spot_logo.png" alt="The blaze spot logo">
+        <div>
+            <h1>The Blaze Spot</h1>
+            <p>The community's campfire</p>
+
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="preston-8.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html" class="active">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Storm Center</h2>
+
+        <form class="report-weather" method="get" action="thanks.html">
+            <label>Full Name:<br>
+                <input type="text" name="fname" minlength="5" placeholder="First Last" pattern="[[a-zA-Z]+ [a-zA-Z]+]"
+                    required></label><br><br>
+
+            <label>Email:<br>
+                <input type="email" name="email" placeholder="123storm@email.com"></label><br><br>
+
+            <label>Phone #:<br>
+                <input type="tel" name="phone_number" placeholder="###-###-####" pattern="([0-9]+(-[0-9]+)+)"
+                    required></label><br><br>
+
+            <label>Zipcode:<br>
+                <input type="number" name="zip" placeholder="12345" pattern="(\d{5}([\-]\d{4})?)"
+                    required></label><br><br>
+
+            <label>Storm Date:<br>
+                <input type="date" name="date"></label><br><br>
+
+
+            <label>What is the storm type?<br>
+                <input list="storms" name="storm_types"></label><br>
+
+            <datalist id="storms">
+                <option value="flash-flood"></option>
+                <option value="hail"></option>
+                <option value="hurricane"></option>
+                <option value="thunderstorm"></option>
+                <option value="tornado"></option>
+            </datalist><br>
+
+            <label>Storm Severity:<br>
+                <input type="range" min="0" max="10" value="5" class="slider" id="storm-sev" list="tickmarks"
+                    oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" name="storm_severity"><span
+                    id="storm-value">5</span></label>
+            <datalist id="tickmarks">
+                <option value="0">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+                <option value="4">
+                <option value="5">
+                <option value="6">
+                <option value="7">
+                <option value="8">
+                <option value="9">
+                <option value="10">
+            </datalist><br><br>
+
+
+            <label>
+                <select name="storm_region" onchange="selectResponse()">
+                    <option value="" disabled selected>Select a Region ...</option>
+                    <option value="Preston">Preston</option>
+                    <option value="Soda Springs">Soda Springs</option>
+                    <option value="Fish Haven">Fish Haven</option>
+
+                </select></label><br><br>
+
+
+            <p>Are you in Danger?</p><br>
+            <label for="yes"></label><input type="radio" id="yes" name="danger_level" value="Yes">
+            Yes</label><br>
+            <label for="no"></label><input type="radio" id="no" name="danger_level" value="No">
+            No</label><br>
+            <label for="maybe"></label><input type="radio" id="maybe" name="danger_level" value="Maybe">
+            Maybe</label><br><br>
+
+            <label for="text-area">Additional Information:<br>
+                <input type="textarea" id="text-area" name="additional_info"></label><br><br>
+
+            <button type="submit">Report</button><br></br>
+
+
+
+
+
+        </form>
+
+
+        <div class="contact-info clearfix">
+            <h3>The Blaze Spot</h3>
+            <img src="images/rsz_1screenshot_47.png" alt="map of the area the blaze spot services">
+            <p>135 Fake Road</p>
+            <p>Preston, Idaho</p>
+            <p></p>
+            <p>999-999-9999</p>
+            <p>theblazespot@tbs.com</p>
+        </div>
+
+
+    </main>
+    <footer class="portalfooter">
+        &copy;The Blaze Spot <span class="copyrightyear"></span>
+        <p>Today's date: </p><span class="todayDate"></span>
+    </footer>
+    <script src="js/dates.js"></script>
+    <script src="js/hamburg.js"></script>
+    <script src="js/form.js"></script>
+
+</body>
+
+</html>

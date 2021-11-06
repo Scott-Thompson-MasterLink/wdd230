@@ -9,17 +9,7 @@
         font-size: 1.2rem;
     }
 
-    .weather-box{
-        position: absolute;
-        top: 30px;
-        left: 25px;
-        background: #f0a102c9;
-        border: 1px solid #000;
-        padding: .7rem;
-        box-shadow: 0 0 30px #333;
-        opacity: .8;
     
-    }
 
     .forecast{
         display: flex;
@@ -60,6 +50,7 @@
     .article img{
         float: right;
         width: 50%;
+        margin-left: 15px;
     }
 
     .contact-info img{
@@ -72,5 +63,19 @@
         grid-template-columns: 1fr 1fr;
     }
 
+}
+@media (min-width: 650px){
+
+    .weather-box{
+        position: absolute;
+        top: 30px;
+        left: 25px;
+        background: #f0a102c9;
+        border: 1px solid #000;
+        padding: .7rem;
+        box-shadow: 0 0 30px #333;
+        opacity: .8;
+    
+    }
 }
 

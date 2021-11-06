@@ -183,4 +183,32 @@ article img{
     margin: 0 10px;
 }
 
+#thankyou{
+    font-size: 2.5rem;
+}
+label{
+    font-family: 'Lato', sans-serif;
+}
+
+#storm-sev{
+    color: #F0A202;
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=date], input[type=number] {
+    border: none;
+    border-bottom: 2px solid #d85531ff ;
+  }
+
+input:focus{
+    border-bottom: 2px solid #F0A202;
+}
+input:hover, select:hover{
+    border-bottom: 4px solid #F0A202;
+    transition: border-bottom .25s;
+}
+
+form span{
+    margin-left: 2px;
+    font-family: 'Lato', sans-serif;
+}
 
