@@ -211,4 +211,7 @@ form span{
     margin-left: 2px;
     font-family: 'Lato', sans-serif;
 }
+fieldset{
+    border: none;
+}
 
