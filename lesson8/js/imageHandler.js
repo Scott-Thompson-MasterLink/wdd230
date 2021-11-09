@@ -1,12 +1,12 @@
-const imagesToLoad = document.querySelectorAll("[data-src]");
 
 
 
-const options = {
-    threshold: 0,
-    rootMargin: '0px 0px -300px 0px'
-}
+// const options = {
+//     threshold: 0,
+//     rootMargin: '0px 0px 200px 0px'
+// }
 
+const imagesToLoad = document.querySelectorAll("img[data-src]")
 
 
 function preLoad(img) {

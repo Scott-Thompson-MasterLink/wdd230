@@ -215,3 +215,13 @@ fieldset{
     border: none;
 }
 
+
+
+[data-src]{
+    filter: blur(.5em);
+}
+
+img src{
+    filter: blur(0em);
+    transition: filter 1s;
+}
