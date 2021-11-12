@@ -1,0 +1,56 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Merriweather', serif;
+    /* padding: 1.5rem; */
+    /* text-align: center; */
+}
+
+p,
+a {
+    font-family: 'Lato', sans-serif;
+}
+
+
+header,
+footer {
+    background-color: #202c59;
+    color: white;
+    padding: 15px;
+}
+
+div{
+    display: grid;
+    margin: 10px auto;
+    gap: 4px;
+    
+}
+
+section{
+    background-color: #202c59;
+    color: #f0a202;
+    margin: auto;
+    padding: 15px;
+    max-width: 400px;
+    text-align: center;
+}
+
+img{
+    box-shadow: .25px 3px 3px 3px #f0a202;
+    width: 90%;
+}
+
+@media (min-width: 32.5em) {
+    div{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+@media (min-width: 64em) {
+    div{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
