@@ -225,3 +225,20 @@ img src{
     filter: blur(0em);
     transition: filter 1s;
 }
+
+.card{
+    background-color: #202c59;
+    color: white;
+
+    padding: 10px;
+    margin: 5px auto;
+
+}
+
+.card h2, .card h3{
+    padding: 0;
+}
+
+.card img{
+    box-shadow: 3px 5px 2px #F0A202;
+}

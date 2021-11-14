@@ -36,5 +36,20 @@
     
     }
 
+    .card{
+        display: block;
+        max-width: 325px;
+    }
+    .card:nth-of-type(odd) .text, .card:nth-of-type(odd) img, .card:nth-of-type(even) .text, .card:nth-of-type(even) img{
+        grid-column: unset;
+        grid-row: unset;
+        
+    }
+
+    .town-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
 
 }

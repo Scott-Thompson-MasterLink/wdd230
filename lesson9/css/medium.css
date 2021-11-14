@@ -63,6 +63,38 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .card:nth-of-type(odd){
+        display: grid;
+        justify-items: center;
+
+
+    }
+    .card:nth-of-type(odd) .text{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        
+    }
+    .card:nth-of-type(odd) img{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .card:nth-of-type(even){
+        display: grid;
+        justify-items: center;
+
+
+    }
+    .card:nth-of-type(even) .text{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        
+    }
+    .card:nth-of-type(even) img{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
 }
 @media (min-width: 650px){
 

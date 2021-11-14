@@ -244,3 +244,9 @@ img src {
     filter: blur(0em);
     transition: filter 1s;
 }
+
+.card{
+    background-color: #202c59 !important;
+    color: white;
+    border: 5px black;
+}
