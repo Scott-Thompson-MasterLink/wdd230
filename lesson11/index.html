@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Scott Thompson">
+    <meta name="description"
+        content="The objective of The Blaze Spot is to create a site for our local communities to be able to show local event, announcements and weather information in one place that is easy to view for everyone, thus allowing our community to be more united.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,8 +38,8 @@
             <li><a class="ham" href="#">&#9776; Menu</a></li>
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="preston.html">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
+            <li><a href="soda-springs.html">Soda Springs</a></li>
+            <li><a href="fish-haven.html">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
@@ -44,17 +47,13 @@
     <main>
         <div class="hero-box">
             <picture>
-                <source srcset="images/countryside-index-300.webp" media="(max-width: 300px)" >
-                <source srcset="images/countryside-index-600.webp" media="(max-width: 600px)" >
+                <source srcset="images/countryside-index-300.webp" media="(max-width: 300px)">
+                <source srcset="images/countryside-index-600.webp" media="(max-width: 600px)">
 
 
                 <img src="images/countryside-index-1000.webp" alt="picture of a grassy meadow" loading="lazy">
             </picture>
-            <!-- <img src="images/rsz_11pexels-jenny-uhling-4321286.jpg" alt="Picture of snowy mountains" title="Photo by Jenny Uhling from Pexels"> -->
-            <!-- <section class="action-call">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus atque distinctio saepe sed maxime ullam necessitatibus at cupiditate tenetur. Impedit id suscipit illo vel exercitationem aperiam inventore unde ipsa magnam?</p>
 
-            </section> -->
 
         </div>
 
@@ -89,14 +88,13 @@
 
 
         <div class="article clearfix">
-            <h2>Lorem ipsum dolor sit amet consectetur</h2>
+            <h2>We welcome you!</h2>
             <img src="images/rsz_pexels-pixabay-257360.jpg" alt="a picture of a park with a bench." loading="lazy">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque aliquid sunt asperiores laborum, ad nisi
-                delectus necessitatibus. Repellat, facere impedit, quisquam nostrum sed minima dignissimos reiciendis
-                alias nobis exercitationem molestias.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus deserunt voluptate ipsa pariatur eius a
-                optio veniam. Nostrum, possimus velit ea porro quis placeat doloribus! Voluptatum nisi neque ad
-                praesentium?</p>
+            <p>Come explore the beautiful parks in our communities. They have widely varied features and backstories
+                that are sure to get you feeling the friendly atmosphere. </p>
+            <p>Immerse yourself in the traditions and local superstitions of our beautiful towns. Find something
+                stunning for every member of the family</p>
+            <p>Be kept up to date on the weather and local events that are unique to us.</p>
 
 
         </div>
@@ -116,10 +114,12 @@
     <footer class="portalfooter">
         &copy;The Blaze Spot <span class="copyrightyear"></span>
         <p>Today's date: </p><span class="todayDate"></span>
+        <p>Last visited <span class="last-visit"></span> days ago</p>
     </footer>
     <script src="js/dates.js"></script>
     <script src="js/hamburg.js"></script>
     <script src="js/towns.js"></script>
+
 
 </body>
 

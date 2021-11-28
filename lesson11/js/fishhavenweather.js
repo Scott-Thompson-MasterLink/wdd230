@@ -1,5 +1,5 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=f94cb0d100da673c530bf7a203b492ae";
-const fiveURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=f94cb0d100da673c530bf7a203b492ae";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&appid=f94cb0d100da673c530bf7a203b492ae";
+const fiveURL = "https://api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&appid=f94cb0d100da673c530bf7a203b492ae";
 let fiveDays = null;
 // let today = null;
 
@@ -69,11 +69,12 @@ fetch(requestURL)
         return response.json();
     })
     .then(function (jsonObject) {
+
         towns = jsonObject["towns"];
-        const relevant = towns.filter(town => (town.name === "Preston"));
+        const relevant = towns.filter(town => (town.name === "Fish Haven"));
 
         relevant.forEach(town => {
-            if (town.name === "Preston") {
+            if (town.name === "Fish Haven") {
                 let eventsp = document.createElement('p');
                 let eventL = document.createElement('div');
                 let events = town.events;
@@ -89,7 +90,7 @@ fetch(requestURL)
                     eventL.appendChild(text)
                 });
 
-                document.querySelector(".preston_events").appendChild(eventL);
+                document.querySelector(".fishhaven_events").appendChild(eventL);
 
             
             }
