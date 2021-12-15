@@ -29,7 +29,7 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) =>{
             imgObserver.unobserve(entry.target);
         }
     })
-}, options);
+});
 
 
 imagesToLoad.forEach((img) => {
