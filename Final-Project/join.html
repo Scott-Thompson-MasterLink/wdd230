@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Scott Thompson">
+    <meta name="description" content="PLACEHOLDER">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Chamber of Commerce Membership</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/building-icon.webp" alt="Chamber Logo">
+        <h1>Orem <br>Chamber of Commerce</h1>
+
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; <span class="menu"></span></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="orem.html">Orem</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html" class="active">Join Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <div class="all-mem">
+            <div class="mem-cards">
+                <h2>Non-Profit</h2>
+                <h3><strong>$100</strong> per year</h3>
+                <p>Chamber Directory and Calendar Access<br><br>
+
+                    Member Pricing at Events<br><br>
+
+                    Buy Additional Sponsorships<br><br>
+
+                    Logo on Website and Printed Collateral</p>
+            </div>
+            <div class="mem-cards">
+                <h2>Bronze</h2>
+                <h3><strong>$200</strong> per year</h3>
+                <p>Chamber Directory and Calendar Access<br><br>
+
+                    Member Pricing at Events<br><br>
+
+                    Buy Additional Sponsorships<br><br>
+
+                    Logo on Website and Printed Collateral<br><br>
+
+                    Invitation to Chamber Committees</p>
+            </div>
+            <div class="mem-cards">
+                <h2>Silver</h2>
+                <h3><strong>$400</strong> per year</h3>
+                <p>Chamber Directory and Calendar Access<br><br>
+
+                    Member Pricing at Events<br><br>
+
+                    Buy Additional Sponsorships<br><br>
+
+                    Logo on Website and Printed Collateral<br><br>
+
+                    Invitation to Chamber Committees<br><br>
+
+                    Seat on Board of Directors or Executive Roundtable<br><br>
+
+                    Priority Invitations to Special Events</p>
+            </div>
+            <div class="mem-cards">
+                <h2>Gold</h2>
+                <h3><strong>$1,000</strong> per year</h3>
+                <p>Chamber Directory and Calendar Access<br><br>
+
+                    Member Pricing at Events<br><br>
+
+                    Buy Additional Sponsorships<br><br>
+
+                    Logo on Website and Printed Collateral<br><br>
+
+                    Invitation to Chamber Committees<br><br>
+
+                    Priority Invitations to Special Events<br><br>
+
+                    Seat on Board of Directors AND Executive Roundtable</p>
+            </div>
+        </div>
+
+
+    
+
+        <form id="joinchamber" method="get" action="thanks.html">
+
+            <div class="left">
+                <label>First Name:<br>
+                    <input type="text" name="fname" minlength="5" placeholder="First" pattern="[[a-zA-Z]+]"
+                        required></label><br><br>
+
+                <label>Last Name:<br>
+                    <input type="text" name="lname" minlength="5" placeholder="Last" pattern="[[a-zA-Z]+]"
+                        required></label><br><br>
+                        
+                <label>Email:<br>
+                    <input type="email" name="email" placeholder="business@email.com" required></label><br><br>
+                    
+                <label>Company Name<br>
+                    <input type="text" name="compName" minlength="5" placeholder="Orem Chamber of Commerce"
+                        required></label><br><br>
+
+                <label>Address:<br>
+                    <input type="text" name="address" placeholder="123 fake st, fake, State 12345"></label><br><br>
+
+
+            </div>
+            <div class="right">
+                <label>Title:<br>
+                    <input type="text" name="Title" minlength="5" placeholder="Title"
+                        pattern="[[a-zA-Z]+ ]"></label><br><br>
+
+                <label>Phone #:<br>
+                    <input type="tel" name="phone_number" placeholder="###-###-####" pattern="([0-9]+(-[0-9]+)+)"
+                        required></label><br><br>
+
+                <label>Zipcode:<br>
+                    <input type="number" name="zip" placeholder="12345" required></label><br><br>
+
+                <label>Company Website<br>
+                    <input type="text" name="website" minlength="5" placeholder="www.example.com"></label><br><br>
+
+                <label>Membership<br>
+                    <input list="options" name="menbership-type" placeholder="Membership" required></label><br>
+
+                <datalist id="options">
+                    <option value="Non-Profit"></option>
+                    <option value="Bronze"></option>
+                    <option value="Silver"></option>
+                    <option value="Gold"></option>
+                </datalist><br>
+
+            </div>
+        </form>
+        <div class="description">
+            <label>Company Description:<br>
+                <textarea name="ompany-description" form="joinchamber" cols="30" rows="10"></textarea></label><br><br>
+        </div>
+
+        <button form="joinchamber" type="submit">Proceed to Payment</button><br><br>
+
+    </main>
+    <footer>
+        <p>&copy;Orem Chamber of Commerce <span class="copyrightyear"></span></p>
+        <div>
+            <a href="" target="_blank"><img src="images/facebook.png" alt="Facebook logo link"></a>
+
+            <a href="" target="_blank"><img src="images/youtube.png" alt="Youtube logo link"></a>
+
+            <a href="" target="_blank"><img src="images/twitter.png" alt="Twitter logo link"></a>
+
+        </div>
+        <p>Call us: 999-158-6589 or Email us: Chamber@OCOC.com</p>
+        <a href="accredit.html" target="_blank">Accredit</a>
+        <p>Date last modified: <span class="modifiedlast"></span></p>
+
+    </footer>
+    <script src="js/hamburg.js"></script>
+</body>
+
+</html>

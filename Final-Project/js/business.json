@@ -1,0 +1,53 @@
+{"businesses":[
+    {   "name":"Vantage Controls",
+        "businessType":"Electronic Manufacturing",
+        "address": "595S 1325W, Orem, UT 84058",
+        "phone": "801-788-3864",
+        "website": "https://www.legrand.us/vantage",
+        "logo": "images/legrand-logo.webp"}
+    ,
+    {   "name":"Apple Spice Junction",
+        "businessType":"Restaurant/Bakery",
+        "address": "422W 800N, Orem, UT 84057",
+        "phone": "(801) 224-4666",
+        "website": "https://www.applespice.com/",
+        "logo": "images/asj-logo-opt.webp"}
+    ,
+    {   "name":"SCERA Center for the Arts",
+        "businessType":"Entertainment",
+        "address": "745 South State Street, Orem, UT 84058",
+        "phone": "(801) 225-2787",
+        "website": "https://scera.org/",
+        "logo": "images/scera-logo.webp"}
+    ,
+    {   "name":"InfoTrax Systems",
+        "businessType":"Computers/Internet",
+        "address": "1875S State St. Suite 3000, Orem, UT 84097",
+        "phone": "(801) 431-4900",
+        "website": "https://www.infotraxsys.com/",
+        "logo": "images/infotrax.webp"}
+    ,
+    {   "name":"Monarch Power Sports",
+        "businessType":"Recreation",
+        "address": "350 West 800 North, Orem, Utah 84057",
+        "phone": "(885) 988-7000",
+        "website": "https://www.monarchpowersports.com/",
+        "logo": "images/monarchpowersports-logo.webp"
+    },
+    {   "name":"Dory Cleaning Services",
+        "businessType":"Cleaning",
+        "address": "534N 700E, Orem, UT 84097",
+        "phone": "(530) 957-0437",
+        "website": "N/A",
+        "logo": "images/none.webp"
+    },
+    {   "name":"Sound Corrections Chiropractic, PLLC",
+        "businessType":"Health",
+        "address": "246 N Orem BLVD Orem UT 84057",
+        "phone": "(801) 900-3223",
+        "website": "https://www.soundcorrections.com/",
+        "logo": "images/sc-logo.webp"
+    }
+
+
+]}

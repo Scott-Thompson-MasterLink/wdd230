@@ -1,0 +1,86 @@
+@media (min-width: 500px){
+    
+    
+    
+    
+    
+    /* Nav */
+    nav ul { 
+        display: flex; 
+    }
+
+    nav ul li { 
+        flex: 1 1 100%; 
+    }
+
+
+    .ham {
+        display: none;
+        
+    }
+    
+    .navigation li {
+        display: block;
+    }
+
+    .respsonsive li {
+        display: block;
+    }
+    
+
+    /* Main */
+    .weather{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .event-article img{
+
+        box-shadow: 3px 3px 3px rgba(211, 211, 211, 0.548);
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        grid-gap: 10px;
+    }
+    section{
+        max-width: 90%;
+    }
+
+    #joinchamber{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+
+
+
+}
+@media (min-width: 800px){
+    .event-article img{
+        float: right;
+        margin-right: 10%;
+
+    }
+
+    .cards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .all-mem{
+        display: flex;
+        flex-direction: row;
+        
+        border-left: 2px solid black;
+        padding-left: 2.5px;
+        padding-right: 2.5px;
+    }
+    .census{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+}
